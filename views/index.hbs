@@ -1,0 +1,25 @@
+<body>
+<br><br>
+<center><h1 style="color: #33bb99;">Grab Food</h1></center>
+<br>
+    <div class="container-fluid">
+        <div class="row">
+            {{#each data}}
+            <div class="col-4">
+                <div class="container-sm">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img src="{{this.imageURL}}"class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">{{this.name}}</h5>
+                                <p class="card-text">{{this.type}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</body>
